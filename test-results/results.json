@@ -1,0 +1,226 @@
+{
+  "config": {
+    "configFile": "c:\\Users\\ASUS\\OneDrive\\Desktop\\Automation-Exercise-Playwright-Project\\playwright.config.ts",
+    "rootDir": "c:/Users/ASUS/OneDrive/Desktop/Automation-Exercise-Playwright-Project/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "c:/Users/ASUS/OneDrive/Desktop/Automation-Exercise-Playwright-Project/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "c:/Users/ASUS/OneDrive/Desktop/Automation-Exercise-Playwright-Project/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results/junit.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "ecommerce.spec.ts",
+      "file": "ecommerce.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Complete E-Commerce Automation",
+          "file": "ecommerce.spec.ts",
+          "line": 12,
+          "column": 6,
+          "specs": [
+            {
+              "title": "End-to-End E-Commerce Flow - Single Browser Session",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 50978,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🚀 Starting Complete E-Commerce Journey...\n"
+                        },
+                        {
+                          "text": "📍 Step 1: Navigating to Home Page...\n"
+                        },
+                        {
+                          "text": "✅ Home page loaded successfully\n"
+                        },
+                        {
+                          "text": "🔐 Step 2: Navigating to Login/Signup Page...\n"
+                        },
+                        {
+                          "text": "✅ Login/Signup page loaded\n"
+                        },
+                        {
+                          "text": "🔑 Step 3: Attempting User Login...\n"
+                        },
+                        {
+                          "text": "✅ User logged in successfully\n"
+                        },
+                        {
+                          "text": "🔍 Step 4: Searching for Product...\n"
+                        },
+                        {
+                          "text": "✅ Product search completed successfully\n"
+                        },
+                        {
+                          "text": "👁️ Step 5: Viewing Product Details...\n"
+                        },
+                        {
+                          "text": "✅ Product details page loaded\n"
+                        },
+                        {
+                          "text": "🛒 Step 6: Adding Product to Cart...\n"
+                        },
+                        {
+                          "text": "✅ Product added to cart\n"
+                        },
+                        {
+                          "text": "🛍️ Step 7: Viewing Cart...\n"
+                        },
+                        {
+                          "text": "✅ Cart page loaded\n"
+                        },
+                        {
+                          "text": "💳 Step 8: Proceeding to Checkout...\n"
+                        },
+                        {
+                          "text": "⚠️ Checkout page verification failed, but continuing...\n"
+                        },
+                        {
+                          "text": "Current URL: https://automationexercise.com/checkout\n"
+                        },
+                        {
+                          "text": "📝 Step 9: Adding Comment and Placing Order...\n"
+                        },
+                        {
+                          "text": "✅ Order placed, payment page loaded\n"
+                        },
+                        {
+                          "text": "💰 Step 10: Processing Payment...\n"
+                        },
+                        {
+                          "text": "✅ Payment details submitted\n"
+                        },
+                        {
+                          "text": "🎉 Step 11: Verifying Order Success...\n"
+                        },
+                        {
+                          "text": "🎊 ORDER COMPLETED SUCCESSFULLY! 🎊\n"
+                        },
+                        {
+                          "text": "Success Message: Congratulations! Your order has been confirmed!\n"
+                        },
+                        {
+                          "text": "✅ Complete E-Commerce journey finished in single browser session!\n"
+                        },
+                        {
+                          "text": "📸 All screenshots saved in test-results folder\n"
+                        },
+                        {
+                          "text": "📈 Test completed - Check Extent report for details\n"
+                        },
+                        {
+                          "text": "📊 Extent Report generated: test-results/extent-report.html\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-02T19:58:17.077Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "c:\\Users\\ASUS\\OneDrive\\Desktop\\Automation-Exercise-Playwright-Project\\test-results\\ecommerce-Complete-E-Comme-c6ab6-ow---Single-Browser-Session-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "52933851c723f78502ec-d28bf001f842c68ae1d2",
+              "file": "ecommerce.spec.ts",
+              "line": 14,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-02-02T19:58:16.021Z",
+    "duration": 52652.916999999994,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

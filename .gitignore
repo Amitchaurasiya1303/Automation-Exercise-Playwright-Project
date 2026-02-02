@@ -1,5 +1,4 @@
 node_modules/
-/test-results/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
@@ -8,4 +7,3 @@ dist/
 .env
 .DS_Store
 Thumbs.db
-screenshots/
