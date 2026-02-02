@@ -8,14 +8,23 @@ export class ProductsPage extends BasePage {
   private readonly viewProductLink = 'a[href="/product_details/1"]';
   private readonly addToCartButton = 'button:has-text("Add to cart")';
   private readonly viewCartLink = 'a:has-text("View Cart")';
+  private readonly productsPageTitle = 'h2:has-text("All Products")';
 
   constructor(page: Page) {
     super(page);
   }
 
+  async navigateToProducts(): Promise<void> {
+    await this.page.goto('/products');
+    await this.waitForElement(this.productsPageTitle);
+  }
+
   async searchProduct(productName: string): Promise<void> {
+    await this.navigateToProducts();
+    await this.waitForElement(this.searchInput);
     await this.fillInput(this.searchInput, productName);
     await this.clickElement(this.searchButton);
+    await this.page.waitForTimeout(2000);
   }
 
   async viewProductDetails(): Promise<void> {
