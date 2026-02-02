@@ -52,12 +52,12 @@ export class ExtentReporter {
 </head>
 <body>
     <div class="header">
-        <h1>🛒 E-Commerce Automation Test Report</h1>
+        <h1>E-Commerce Automation Test Report</h1>
         <p>Generated on: ${new Date().toLocaleString()}</p>
     </div>
     
     <div class="summary">
-        <h2>📊 Test Summary</h2>
+        <h2>Test Summary</h2>
         <p><strong>Total Tests:</strong> ${this.testResults.length}</p>
         <p><strong>Passed:</strong> <span class="status-passed">${this.testResults.filter(t => t.status === 'passed').length}</span></p>
         <p><strong>Failed:</strong> <span class="status-failed">${this.testResults.filter(t => t.status === 'failed').length}</span></p>
@@ -68,10 +68,10 @@ export class ExtentReporter {
         <h3>${escapeHtml(test.testName)} - <span class="status-${test.status}">${test.status.toUpperCase()}</span></h3>
         <p><strong>Execution Time:</strong> ${test.timestamp}</p>
         
-        <h4>📋 Test Steps:</h4>
+        <h4>Test Steps:</h4>
         ${test.steps.map((step: string) => `<div class="step">${escapeHtml(step)}</div>`).join('')}
         
-        <h4>📸 Screenshots:</h4>
+        <h4>Screenshots:</h4>
         ${test.screenshots.map((screenshot: string) => `
         <div class="screenshot">
             <p><strong>${path.basename(screenshot)}</strong></p>
@@ -84,6 +84,6 @@ export class ExtentReporter {
 </html>`;
 
     fs.writeFileSync(this.reportPath, html);
-    console.log(`📊 Extent Report generated: ${this.reportPath}`);
+    console.log(`Extent Report generated: ${this.reportPath}`);
   }
 }
